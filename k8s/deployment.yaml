@@ -6,11 +6,12 @@ metadata:
     app: smart-lock-api
 spec:
   replicas: 2
+  revisionHistoryLimit: 2
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: 2          # 同時に2Pod起動
-      maxUnavailable: 0    # ダウンタイムなし
+      maxSurge: 2 # 同時に2Pod起動
+      maxUnavailable: 0 # ダウンタイムなし
   selector:
     matchLabels:
       app: smart-lock-api
