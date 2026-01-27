@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: smart-lock-api
-          image: keyi1000/smart-lock-backend:2e417db54bbab7f48dd1944e8593ac4881b64572
+          image: keyi1000/smart-lock-backend:1fe7af50ce5416db116588a6cd34976b2469a6fc
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
