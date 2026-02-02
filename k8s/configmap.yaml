@@ -4,6 +4,6 @@ metadata:
   name: smart-lock-config
 data:
   PORT: "8080"
-  DB_HOST: "${DB_HOST}" # GitHub Secretsから注入
-  DB_PORT: "${DB_PORT}" # GitHub Secretsから注入
-  DB_NAME: "${DB_NAME}" # GitHub Secretsから注入
+  DB_HOST: "172.26.0.2" # PostgreSQLコンテナのIPアドレス
+  DB_PORT: "5433"
+  DB_NAME: "smart_lock_db"
